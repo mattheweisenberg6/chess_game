@@ -1,26 +1,62 @@
-♟️ Java Chess Game
+# ♟️ Java Chess Game
+
 A fully-featured chess game built with Java Swing, implementing complete chess rules and mechanics.
 
-Technologies Used
+## Features
 
-Java - Core programming language
-Swing - GUI framework for visual interface
-AWT - Event handling and graphics
+✅ **Complete Chess Rules**
+- All piece movements (Pawn, Rook, Knight, Bishop, Queen, King)
+- Move validation for each piece type
+- Turn-based gameplay (White vs Black)
 
-How to Run
+✅ **Special Moves**
+- Castling (Kingside and Queenside)
+- En Passant captures
 
-Clone the repository:
+✅ **Game Logic**
+- Check detection
+- Checkmate detection
+- Stalemate detection
+- Prevents illegal moves that would leave king in check
 
-bashgit clone https://github.com/yourusername/java-chess-game.git
+✅ **User Interface**
+- Clean 8x8 chessboard with alternating colors
+- Unicode chess piece symbols (♔ ♕ ♖ ♗ ♘ ♙)
+- Visual piece selection with yellow border highlight
+- Turn indicator showing current player
+- Status messages for check/checkmate/stalemate
 
-Navigate to the project directory:
+## Technologies Used
 
-bashcd java-chess-game
+- **Java** - Core programming language
+- **Swing** - GUI framework for visual interface
+- **AWT** - Event handling and graphics
 
-Compile and run:
+## How to Run
 
-bashjavac main/Main.java
+1. Clone the repository:
+```bash
+git clone https://github.com/mattheweisenberg6/chess_game.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd chess_game
+```
+
+3. Compile and run:
+```bash
+javac main/Main.java
 java main.Main
+```
+
+## How to Play
+
+1. Click on a piece to select it (yellow border appears)
+2. Click on a destination square to move the piece
+3. The game validates moves according to chess rules
+4. Players alternate turns (White moves first)
+5. The game detects check, checkmate, and stalemate automatically
 
 ## Project Structure
 ```
